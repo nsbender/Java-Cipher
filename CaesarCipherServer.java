@@ -31,7 +31,7 @@ public class CaesarCipherServer {
 				//Create a date object to keep track of connections and
 				//Print that a new connection has been made to a client
 				Date date = new Date();
-				System.out.println(date.toString() + ": New Connection to Server");
+				System.out.println(date.toString() + ": New Connection to Server from: " + clientSocket.getRemoteSocketAddress().toString());
 				new Thread(){
 					public void run(){
 						//Create the server on the specified port
